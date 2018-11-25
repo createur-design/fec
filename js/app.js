@@ -8,6 +8,7 @@ $(function(){
 
     var active = false;
     $('#btMenu').on('click', function(e){
+        $(this).toggleClass('active');
         e.preventDefault();
         console.log('click');
         if(active == false){
@@ -22,9 +23,7 @@ $(function(){
             active = false;            
             $('header nav').animate({
                 left: '-100%'
-            }, 300); 
+            }, 500); 
         }
     });
-
-
 });

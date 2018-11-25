@@ -1,4 +1,5 @@
 @import 'vars';
+@import 'header';
 @import 'nav';
 @import 'footer';
 html, body{
@@ -14,6 +15,10 @@ a{
     color: inherit;
 }
 /* CLASS */
+.flexEnd{
+    display: flex;
+    justify-content: flex-end;
+}
 .texteCenter {
     text-align: center;
 }

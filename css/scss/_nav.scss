@@ -18,13 +18,12 @@ nav {
         flex-direction: column;
         justify-content: center;
         li {
-            padding: 0;
             margin: 0;
             list-style: none;
             width: 100%;
-            height: 50px;
+            height: 50px;            
             a {
-                display: block;
+                display: inline-block;
                 width: 100%;
                 height: 50px;
                 line-height: 50px;
@@ -55,4 +54,28 @@ nav:before {
     z-index: -1;
     transform: skewX(10deg);
     transform-origin: bottom right;
+}
+
+@media (min-width:640px){
+    nav{
+        position: static;
+        height: auto;
+        color: #000;
+        justify-content: flex-start;
+        border-top:1px solid $grisClair;
+        ul{
+            flex-direction: row;
+            width: auto;
+            height: auto;
+            li{
+                width: auto;
+                a:first-child{
+                    padding: 0 1rem 0 0;
+                }
+            }
+        }
+        .logo{
+            display: none;
+        }
+    }
 }
