@@ -2,17 +2,29 @@ $(function(){
     console.log('READY');
 
     /* LOAD */
-    $(window).on("load", function(e){
+    $(window).on("load", function(){
         console.log("page chargée");
+        $("#loader").fadeOut(800);
+        $("body").removeClass("loading");
+        
+    });
+
+    $(window).on("scroll", function(){
+        var scrollPos = $(this).scrollTop();
+        var hauteurDocument = $(document).height();
+        console.log(scrollPos + " | " + hauteurDocument);
+        $("#graph").css({
+            top : 250 - scrollPos/4 + "px"
+        });
     });
 
     var active = false;
-    $('#btMenu').on('click', function(e){
+    $("#btMenu").on("click", function(e){
         $(this).toggleClass('active');
         e.preventDefault();
         console.log('click');
         if(active == false){
-            $('html, body').css('overflow', 'hidden');
+            $("html, body").css("overflow", "hidden");
             active = true;
             $('header nav').animate({
                 left: 0

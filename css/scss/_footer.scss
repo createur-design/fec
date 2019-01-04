@@ -1,5 +1,9 @@
+.preFooter{
+    margin-bottom: 50px;
+}
 footer{
     position: fixed;
+    z-index: 9999;
     bottom: 0;
     left:0;
     width: 100%;
@@ -11,10 +15,10 @@ footer{
             display: none;
         }
     }
-    #tel{
+    #tel, #mail{
         box-sizing: content-box;
         $size : 50px;
-        position: absolute;
+        position: absolute;        
         top:0;
         left:50%;
         transform: translate(-50%, -50%);
@@ -26,6 +30,9 @@ footer{
         text-align: center;
         line-height: $size;
     }  
+    #mail{
+        display: none;
+    }
     #btMenu{
         width: 50px;
         height: 50px;
@@ -63,6 +70,12 @@ footer{
 @media (min-width: 640px){
     footer{
         line-height: 50px;
+        #tel{
+            display: none;
+        }
+        #mail{
+            display: block;
+        }
         .copyright{
             span{
                 display: inline-block;

@@ -1,19 +1,64 @@
 @import 'vars';
 @import 'header';
 @import 'nav';
+@import 'accueil';
 @import 'footer';
 html, body{
     height: 100%;
-    background-color: #fff;
+    background-color: #F6F6F6;
+    font-family: 'Montserrat', sans-serif;
+    color:#000000;
+}
+#graph{
+    position: fixed;
+    top: 250px;
+    left:10px;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    z-index: 1;
 }
 main{
     min-height: 100%;
-    margin-bottom: 50px;
 }
 a{
-    text-decoration: none;
-    color: inherit;
+    color: $rouge;
 }
+h1{
+    position: relative;
+    z-index: 1;
+    padding-left: 10px;
+}
+h1:before{
+    content:"";
+    position: absolute;
+    z-index: -1;
+    top:0;
+    left:0;
+    width: 120px;
+    height: 25px;
+    border-top:3px solid $rouge;
+    border-left:3px solid $rouge;
+}
+h2{
+    display: inline-block;
+    position: relative;
+    padding-right: 10px;
+}
+h2:after{
+    content:"";
+    display: inline-block;
+    position: relative;
+    bottom:-5px;
+    width: 10px;
+    height: 10px;
+    border-bottom:2px solid $rouge;
+    border-right:2px solid $rouge;
+}
+section{
+    padding:50px 0;
+}
+
 /* CLASS */
 .flexEnd{
     display: flex;
