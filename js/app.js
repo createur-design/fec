@@ -38,4 +38,12 @@ $(function(){
             }, 500); 
         }
     });
+    $('nav li > .subMenu').parent().click(function() {
+        var submenu = $(this).children('.subMenu');
+        if ( $(submenu).is(':hidden') ) {
+          $(submenu).slideDown(200);
+        } else {
+          $(submenu).slideUp(200);
+        }
+      });
 });

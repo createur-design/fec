@@ -25,7 +25,7 @@ $description = "Demandez un devis en moins de 5 minutes à votre expert comptabl
                 </div>
                 <div class="small-12 small-order-1 large-4 large-order-2 columns">
                     <div class="histoire">
-                        <p>Le cabinet <strong>François Expertise Comptable</strong> situé près de Saint Omer accompagne tout type d’entreprise <b>depuis plus de 85 ans</b>.</p>
+                        <p>L'agence <strong>François Expertise Comptable</strong> situé près de Saint Omer accompagne tout type d’entreprise <b>depuis plus de 85 ans</b>.</p>
                     </div>                    
                 </div>
             </div>
@@ -42,7 +42,7 @@ $description = "Demandez un devis en moins de 5 minutes à votre expert comptabl
                         <li>d’une stratégie marketing bien ciblée</li>
                         <li>de la motivation de votre équipe</li>
                     </ul>
-                    <p>Dans la gestion de l’entreprise, <strong>la comptabilité</strong> est aussi un outil indispensable. Notre cabinet d’expertise comptable vous accompagne quotidiennement. Nous sommes proche de vous et nous nous adaptons à votre mode de fonctionnement.</p>
+                    <p>Dans la gestion de l’entreprise, <strong>la comptabilité</strong> est aussi un outil indispensable. Notre agence d’expertise comptable vous accompagne quotidiennement. Nous sommes proche de vous et nous nous adaptons à votre mode de fonctionnement.</p>
                     <p>Tout d’abord nous apprenons à connaître votre activité. Vous pouvez donc vous appuyer sur les données comptables personnalisées pour la gestion de l’entreprise. Par conséquent vous êtes toujours au courant de la condition financière de votre activité. </p>
                 </div>
             </div>
@@ -51,8 +51,8 @@ $description = "Demandez un devis en moins de 5 minutes à votre expert comptabl
         <section>
             <div class="row">
                 <div class="small-12 columns">
-                    <h2>Cabinet François - un service complet pour votre tranquillité</h2>
-                    <p>Le cabinet <strong>François Expertise Comptable</strong> c’est avant tout une <a href="#">équipe de professionnels</a>. Nos méthodes de travail sont adaptées à l’exigence de notre métier. Nous sommes fiers de notre longue histoire et de la fidélité de nos clients.</p>
+                    <h2>Agence François - un service complet pour votre tranquillité</h2>
+                    <p>L'agence <strong>François Expertise Comptable</strong> c’est avant tout une <a href="#">équipe de professionnels</a>. Nos méthodes de travail sont adaptées à l’exigence de notre métier. Nous sommes fiers de notre longue histoire et de la fidélité de nos clients.</p>
                     <p>Nous développons d’ailleurs nos compétences en continu. La connaissance des dispositions légales qui changent constamment nous permet ainsi de vous proposer des prestations optimisées et améliorées.</p>
                 </div>
             </div>

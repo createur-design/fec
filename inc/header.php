@@ -33,7 +33,7 @@
     <header>
         <div class="row">
             <div class="small-12 columns">
-                <div class="logoHeader">logo</div>
+                <div class="logoHeader"><img src="img/logoFEC.png" alt="Fraçois Expertise Comptable"></div>
             </div>
         </div>        
         <div class="row">
@@ -43,11 +43,17 @@
                         <li <?php if($page == "accueil"){echo 'class="active"';} ?>><a href="index.php">accueil</a></li>
                         <li <?php if($page == "missions"){echo 'class="active"';} ?>><a href="missions.php">nos missions</a></li>
                         <li <?php if($page == "equipe"){echo 'class="active"';} ?>><a href="equipe-francois-expertise-comptable.php">l'équipe</a></li>
-                        <li><a href="#">SDA</a></li>
-                        <li><a href="#">BGE</a></li>
+                        <li><a href="#">nos agences<span>+</span></a>
+                            <ul class="subMenu">
+                                <li <?php if($page == "fec"){echo 'class="active"';} ?>><a href="francois-expertise-comptable.php">FEC</a></li>
+                                <li <?php if($page == "sda"){echo 'class="active"';} ?>><a href="#">SDA</a></li>
+                                <li <?php if($page == "dkec"){echo 'class="active"';} ?>><a href="#">DKEC</a></li>
+                            </ul>
+                        </li>     
+                        <li><a href="#">créateur</a></li>                   
                         <li><a href="#">nous rencontrer</a></li>
                     </ul>
-                    <div class="logo"><img src="img/logoFEC.png" alt=""></div>
+                    <div class="logo"><img src="img/logoFEC.png" alt="Fraçois Expertise Comptable"></div>
                 </nav>
             </div>
         </div>        

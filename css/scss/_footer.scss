@@ -1,5 +1,46 @@
 .preFooter{
     margin-bottom: 50px;
+    .atouts{
+        position: relative;
+        background-color: #fff;
+        border-radius: 25px;
+        padding: 2rem 0 0 0;
+        overflow: hidden;
+        h2{
+            margin-left:2rem;
+        }
+        ul, li{
+            list-style: none;
+            margin:0;
+            padding:0;
+        }
+        li{
+            padding: 1rem 5rem;
+            border-bottom: 1px solid $grisClair;
+            span{
+                font-size: .8rem;
+                color: $grisFonce;
+                margin-right: 2rem;
+            }
+        }
+        li:last-child{
+            border-bottom: none;
+        }
+    }
+    .atouts:before{
+        content:"";
+        position: absolute;
+        top:0;
+        left:0;
+        width: 15px;
+        height: 100%;
+        background-color: $rouge;
+    }
+    #citation{
+        margin:50px 0 0 0;
+        font-size: .9rem;
+        font-style: italic;
+    }
 }
 footer{
     position: fixed;
@@ -10,6 +51,10 @@ footer{
     height: 50px;
     background-color: #000;
     color:#fff;  
+    a{
+        text-decoration: none;
+        color:inherit;
+    }
     .copyright{
         span{
             display: none;
@@ -67,7 +112,7 @@ footer{
         vertical-align: middle;
     }
 }
-@media (min-width: 640px){
+@media (min-width: 720px){
     footer{
         line-height: 50px;
         #tel{
