@@ -9,7 +9,7 @@ nav {
     align-content: center;
     background-color: #fff;
     color: #fff;
-    overflow: hidden;
+    // overflow: hidden;
     ul {
         padding:0;
         margin:0;
@@ -42,10 +42,16 @@ nav {
             a{
                 color:$rouge;
             }
-        }
+        }  
+        li.childrenMenu span{
+            display: none;
+        }      
     }
     ul.subMenu{
-        display: none;
+        display: block;
+        padding-left:1rem;
+        font-size: .9rem;
+        color:$grisClair;
     }
     .logo{
         position: absolute;
@@ -93,6 +99,34 @@ nav:before {
             a:hover{
                 color:$rouge;
             }
+            li.childrenMenu {
+                display: flex;
+                align-items: center;
+                position: relative;
+                span{
+                    display: flex;
+                    margin-right:1rem;
+                    margin-left: .5rem;
+                    background-color: $rouge;
+                    color:#fff;
+                    padding:0 .5rem;
+                }
+                span:hover{
+                    cursor: pointer;
+                    background-color: #fff;
+                    color:$rouge;
+                }
+            }
+            li.childrenMenu>a{
+                padding:0!important;
+            }
+        }
+        ul.subMenu{
+            display: none;
+            position: absolute;
+            top:100%;
+            z-index: 9999;
+            color:inherit;
         }
         .logo{
             display: none;

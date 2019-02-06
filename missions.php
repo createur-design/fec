@@ -1,14 +1,14 @@
 <?php
 $page = "missions";
 $titre = "François Expertise Comptable a une solution pour votre activité";
-$description = "";
+$description = "Expert comptable en Hauts-de-France réalise votre audit comptable et assure la comptabilité de votre société.  Nos missions sont spécifiquement adaptées à votre type d'activité : créateur d’entreprise, particulier et professionnel.";
 ?>
     <?php include 'inc/header.php'; ?>
     <main>
 
         <div class="row">
             <div class="small-12 columns">
-                <h1>François Expertise Comptable a une solution pour votre activité</h1>
+                <h1>Une solution comptable pour votre activité</h1>
             </div>
         </div>
 
@@ -75,6 +75,8 @@ $description = "";
                 </div>
             </div>
         </section>
+
+        <?php include 'inc/atouts.php'; ?>
 
     </main>
     <?php include 'inc/footer.php'; ?>     

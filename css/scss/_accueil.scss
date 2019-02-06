@@ -1,14 +1,14 @@
 .histoire{
-    padding-left: 10px;
-    border-left: 2px solid $rouge;
+    background-color: $rouge;
+    border-left: 0px;
+    padding:50px;
+    color:#fff;
+    text-align: center;
 }
 
 @media (min-width:1024px){
     .histoire{
-        background-color: $rouge;
-        border-left: 0px;
+        max-width: 100%;
         border-radius: 100px 60px 80px 50px / 80px 120px 100px 130px;
-        padding:50px;
-        color:#fff;
     }
 }

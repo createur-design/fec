@@ -1,7 +1,11 @@
 @import 'vars';
+@import 'cookies';
 @import 'header';
 @import 'nav';
 @import 'accueil';
+@import 'atouts';
+@import 'equipe';
+@import 'map';
 @import 'footer';
 html, body{
     height: 100%;
@@ -10,21 +14,55 @@ html, body{
     color:#000000;
 }
 #graph{
-    position: fixed;
-    top: 250px;
-    left:10px;
-    width: 50px;
-    height: 50px;
-    background-color: red;
-    z-index: 1;
+    position: absolute;
+    top: 150px;
+    left:-50px;
+    width: 250px;
+    height: 450px;
+    background-color: $rouge;
+    z-index: -1;
+    opacity: .3;
+    overflow: hidden;
+}
+#graph:after{
+    content:"";
+    position: absolute;
+    top:-25%;
+    left:60%;
+    width: 100%;
+    height: 150%;
+    background-color: #fff;
+    border-radius: 150%;
 }
 main{
     position: relative;
+    max-width: 62.5rem;
+    margin:auto;
     min-height: 100%;
+    padding-bottom: 50px;
     z-index: 1;
 }
 a{
     color: $rouge;
+}
+a.bt{
+    text-decoration: none;
+    border-radius: 8px;
+    display: inline-block;
+    font-size: 1.5rem;
+}
+a.bt:after{
+    content:"\2192";
+    margin-left: 10px;
+    transition: .3s;
+}
+a.bt:hover:after{
+    margin-left:20px;
+}
+a.btBlanc{
+    // background-color: #fff;
+    // color:$rouge;
+    color:#fff;
 }
 h1{
     position: relative;
@@ -70,4 +108,9 @@ section{
 }
 .textRight {
     text-align: right;
+}
+@media (min-width:640px){
+    a.bt{
+        font-size: 1.3rem;
+    }
 }

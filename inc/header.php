@@ -42,8 +42,8 @@
                     <ul>
                         <li <?php if($page == "accueil"){echo 'class="active"';} ?>><a href="index.php">accueil</a></li>
                         <li <?php if($page == "missions"){echo 'class="active"';} ?>><a href="missions.php">nos missions</a></li>
-                        <li <?php if($page == "equipe"){echo 'class="active"';} ?>><a href="equipe-francois-expertise-comptable.php">l'équipe</a></li>
-                        <li><a href="#">nos agences<span>+</span></a>
+                        <li <?php if($page == "equipe"){echo 'class="active"';} ?>><a href="nos-equipes-experts-comptable.php">l'équipe</a></li>
+                        <li class="childrenMenu"><a href="nos-agences">nos agences</a><span>+</span>
                             <ul class="subMenu">
                                 <li <?php if($page == "fec"){echo 'class="active"';} ?>><a href="francois-expertise-comptable.php">FEC</a></li>
                                 <li <?php if($page == "sda"){echo 'class="active"';} ?>><a href="#">SDA</a></li>
@@ -57,5 +57,4 @@
                 </nav>
             </div>
         </div>        
-    </header>
-    <div id="graph"></div>
+    </header>    

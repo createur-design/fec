@@ -1,26 +1,3 @@
-<section class="preFooter">
-    <div class="row align-middle">
-        <div class="small-12 medium-12 columns">
-            <div class="atouts">
-                <h2>Nos atouts</h2>
-                <ul>
-                    <li><span>1 --</span>une <b>prestation clairement définie</b> (lettre de mission)</li>
-                    <li><span>2 --</span><b>solutions à la carte</b>, adaptées à vos besoins</li>
-                    <li><span>3 --</span>une <b>proximité</b> avec votre responsable de dossier</li>
-                    <li><span>4 --</span><b>disponibilité</b> de la direction de l'agence pour toute demande</li>
-                    <li><span>5 --</span>une <b>solution</b> de saisie comptable <b>intégrée</b> (avec formation à la prise en main)</li>
-                </ul>
-            </div>            
-        </div>
-        <div class="small-12 columns">
-            <div id="citation">
-                <p>Nous sommes à votre disposition dans la gestion globale de la comptabilité de votre société :
-                entreprises individuelles (EI, EIRL), les auto-entrepreneurs, les professions libérales, les TPE et PME, les sociétés commerciales (SARL, EURL, SAS, SA,...), les sociétés d'exercice libéral (SELARL,...), les sociétés civiles de moyens (SCM), les sociétés civiles immobilières (SCI), les associations, etc.</p>
-            </div>            
-        </div>        
-    </div>
-</section>
-
 <footer>
     <div id="tel">
         <a href="tel:0321982321"><img src="img/phone-call.png" alt="contactez-nous"></a>
@@ -46,4 +23,14 @@
 <link rel="stylesheet" href="css/app.min.css">
 <!-- JS -->
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="js/jquery.cookie.min.js"></script>
 <script src="js/app.min.js"></script>
+<?php if($page === "agences"){
+    echo '<link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+    integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+    crossorigin=""/>';
+    echo '<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+    integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+    crossorigin=""></script>';
+}
+?>

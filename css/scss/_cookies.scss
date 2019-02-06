@@ -1,0 +1,10 @@
+.cookie-bar{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 9999;
+    width: 50%;
+    background-color: $rouge;
+    color:#fff;
+    padding: 1rem;
+}

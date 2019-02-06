@@ -1,0 +1,80 @@
+.photo {
+    position: relative;
+    // background-color: $rouge;
+}
+
+.photoBorderTopLeft {
+    padding: 15px 0 0 15px;
+}
+.photoBorderTopRight {
+    padding: 15px 15px 0 0;
+}
+.photoBorderBottomRight {
+    padding: 0 15px 15px 0;
+}
+.photoBorderBottomLeft {
+    padding: 0 0 15px 15px;
+}
+.photoBorderBottomRight:before, .photoBorderBottomRight:after, .photoBorderBottomLeft:before, .photoBorderBottomLeft:after{
+    content:"";
+    position: absolute;
+    bottom:0;
+    width: 80%;
+    height: 15px;
+    background-color: $rouge;
+}
+.photoBorderBottomRight:before{
+    right: 0;
+}
+.photoBorderBottomRight:after{
+    right: 0;
+    width: 15px;
+    height: 30%;
+}
+.photoBorderBottomLeft:before{
+    left:0;
+}
+.photoBorderBottomLeft:after{
+    left: 0;
+    width: 15px;
+    height: 30%;
+}
+.photoBorderTopLeft:before, .photoBorderTopRight:before, .photoBorderTopLeft:after, .photoBorderTopRight:after{
+    content:"";
+    position: absolute;
+    top:0;
+    width: 80%;
+    height: 15px;
+    background-color: $rouge;
+}
+.photoBorderTopLeft:after, .photoBorderTopRight:after{
+    width: 15px;
+    height: 30%;
+}
+.photoBorderTopLeft:before, .photoBorderTopLeft:after{
+    left:0;
+}
+.photoBorderTopRight:before, .photoBorderTopRight:after{
+    right:0;
+}
+.profil {
+    h3 {
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+    }
+
+    .role {
+        margin: 0 0 1rem 0;
+        color: $rouge;
+        font-weight: bold;
+    }
+
+    .rsPro {
+        margin-top: 2rem;
+
+        img {
+            max-width: 24px;
+            margin: 0 10px;
+        }
+    }
+}
