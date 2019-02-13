@@ -24,13 +24,18 @@
             align-items : center;
             z-index: 9999;
         }
-    </style>
+    </style>    
 </head>
 <body class="<?php echo $page; ?> loading">
     <div id="loader">
         <div>chargement...</div>        
     </div>
     <header>
+        <div class="row">
+            <div class="small-12 columns textRight">
+                <small><a href="tel:0321982321">03 21 98 23 21</a></small>
+            </div>
+        </div>
         <div class="row">
             <div class="small-12 columns">
                 <div class="logoHeader"><img src="img/logoFEC.png" alt="Fraçois Expertise Comptable"></div>
@@ -51,7 +56,7 @@
                             </ul>
                         </li>     
                         <li><a href="#">créateur</a></li>                   
-                        <li><a href="#">nous rencontrer</a></li>
+                        <li <?php if($page == "contact"){echo 'class="active"';} ?>><a href="nous-rencontrer.php">nous rencontrer</a></li>
                     </ul>
                     <div class="logo"><img src="img/logoFEC.png" alt="Fraçois Expertise Comptable"></div>
                 </nav>

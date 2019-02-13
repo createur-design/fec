@@ -1,4 +1,4 @@
-# fec
+# FEC
 
 ### Projet VSCODE
 

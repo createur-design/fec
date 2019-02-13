@@ -6,9 +6,29 @@ $description = "Expert comptable dans l’audomarois propose le pilotage complet
     <?php include 'inc/header.php'; ?>
     <main>
 
-    <h1>nos agences</h1>
+    <div class="row">
+        <div class="small-12 columns">
+            <h1>nos agences</h1>
+        </div>
+    </div>
 
-    <div id="map" class="map"></div>
+    <section>
+        <div class="row">
+            <div class="small-12 columns">
+                <div id="map" class="map"></div>
+            </div>
+        </div> 
+    </section>       
+
+    <section>
+        <div class="rows mall-up-1 medium-up-3">
+            <div class="column">
+                <div class="photoAgence">
+                    <img src="https://via.placeholder.com/640x480.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>    
 
     </main>
     <?php include 'inc/footer.php'; ?>     

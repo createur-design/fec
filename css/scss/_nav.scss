@@ -4,12 +4,13 @@ nav {
     top: 0;
     left: -100%;
     width: 100%;
-    height: calc(100% - 50px);
+    height: calc(100vh - 50px);
     display: flex;
     align-content: center;
     background-color: #fff;
     color: #fff;
     // overflow: hidden;
+    // overflow-y: scroll;
     ul {
         padding:0;
         margin:0;
@@ -83,6 +84,7 @@ nav:before {
         justify-content: flex-start;
         border-top:1px solid $grisClair;
         background-color: transparent;
+        // overflow-y: hidden;
         ul{
             flex-direction: row;
             width: auto;
@@ -104,17 +106,21 @@ nav:before {
                 align-items: center;
                 position: relative;
                 span{
-                    display: flex;
+                    display: block;
+                    width: 30px;
+                    text-align: center;
                     margin-right:1rem;
                     margin-left: .5rem;
                     background-color: $rouge;
                     color:#fff;
+                    border: 1px solid transparent;
                     padding:0 .5rem;
                 }
                 span:hover{
                     cursor: pointer;
                     background-color: #fff;
                     color:$rouge;
+                    border: 1px solid $rouge;
                 }
             }
             li.childrenMenu>a{
@@ -127,6 +133,7 @@ nav:before {
             top:100%;
             z-index: 9999;
             color:inherit;
+            width: calc(100% - 1rem);
         }
         .logo{
             display: none;

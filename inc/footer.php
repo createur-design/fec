@@ -34,3 +34,5 @@
     crossorigin=""></script>';
 }
 ?>
+<?php if($page == "contact"){echo "<script src='https://www.google.com/recaptcha/api.js'></script>";
+} ?> 
